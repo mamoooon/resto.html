@@ -1,24 +1,23 @@
- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://127.0.0.1:5500/resto.html#contact -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Midnight Luxe</title>
-    <link rel="icon" href="restaurant_11264136.png" type="image/png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./Midnight Luxe_files/restaurant_11264136.png" type="image/png">
+    <link rel="stylesheet" href="./Midnight Luxe_files/style.css">
 </head>
 
-<body style="background-image: url('ChatGPT Image Sep 20, 2025, 07_15_29 PM.png'); background-size: cover; background-repeat: no-repeat;">
+<body style="background-image: url(&#39;ChatGPT Image Sep 20, 2025, 07_15_29 PM.png&#39;); background-size: cover; background-repeat: no-repeat;">
 
     <div class="header">
-        <img src="restaurant_11264136.png" alt="Logo" class="Logo">
+        <img src="./Midnight Luxe_files/restaurant_11264136.png" alt="Logo" class="Logo">
         <nav>
-            <a href="#home">Home</a>
-            <a href="#menu" class="menu">Menu</a>
-            <a href="#about" class="aboutus">About Us</a>
-            <a href="#contact" class="contact">Contact</a>
+            <a href="http://127.0.0.1:5500/resto.html#home">Home</a>
+            <a href="http://127.0.0.1:5500/resto.html#menu" class="menu">Menu</a>
+            <a href="http://127.0.0.1:5500/resto.html#about" class="aboutus">About Us</a>
+            <a href="http://127.0.0.1:5500/resto.html#contact" class="contact">Contact</a>
         </nav>
     </div>
 
@@ -83,7 +82,7 @@
 
 <div class="grid">
   <div class="image">
-    <img src="file.jpg" alt="Restaurant photo">
+    <img src="./Midnight Luxe_files/file.jpg" alt="Restaurant photo">
   </div>
   <div class="text">
     <h2>Welcome to Golden Spoon</h2>
@@ -97,21 +96,59 @@
 </div>
 
 
-</body>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 
-</html>
+
+
 
 <section class="contact">
   <h2>Contact Us</h2>
   <form class="contact-form">
     <label for="name">Name</label>
-    <input type="text" id="name" name="name" placeholder="Your name" required>
+    <input type="text" id="name" name="name" placeholder="Your name" required="">
 
     <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Your email" required>
+    <input type="email" id="email" name="email" placeholder="Your email" required="">
 
     <label for="message">Message</label>
-    <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+    <textarea id="message" name="message" rows="5" placeholder="Your message" required=""></textarea>
 
     <button type="submit">Send Message</button>
    
@@ -120,8 +157,9 @@
 
 
 <footer class="footer">
-  <p>&copy; 2025 Golden Spoon. All rights reserved.</p>
+  <p>© 2025 Golden Spoon. All rights reserved.</p>
   <div class="social">
-    <a href="#"><img src="restaurant_11264136.png" alt="Instagram"></a>
+    <a href="http://127.0.0.1:5500/resto.html#"><img src="./Midnight Luxe_files/restaurant_11264136.png" alt="Instagram"></a>
   </div>
 </footer>
+</body></html>

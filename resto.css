@@ -1,0 +1,8 @@
+
+nav {
+  background-color: #333;   /* dark background */
+  color: white;             /* text color */
+  padding: 10px;            /* space inside */
+  display: flex;            /* arrange items in a row */
+  gap: 20px;                /* spacing between items */
+}

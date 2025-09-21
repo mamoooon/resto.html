@@ -1,0 +1,157 @@
+
+
+.header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+   padding: 10px  ;         
+   font-size:25px;
+   justify-content: space-between;
+}
+
+   img{    width: 157px;
+}
+
+
+.header nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #926a22;
+  padding-right:80px
+  
+}
+
+
+  .header nav a:first-child:hover {color: rgb(202, 162, 89);}
+  .header nav a.menu:hover {color: rgb(202, 162, 89);}
+  .header nav a.aboutus:hover { color: rgb(202, 162, 89);} ;
+  .header nav a.contact:hover { color:rgb(202, 162, 89),}
+
+
+  body {
+    color: #d3d3d3; /* light grey */
+}
+
+h2{  color:   #e2ac47;}
+
+li :hover {color: #926a22; }
+  
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two equal columns */
+  gap: 20px; /* space between columns */
+}
+
+.box {
+  background: #151514;
+  padding: 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* image left, text right */
+  gap: 20px;
+  align-items: center; /* center items vertically */
+  max-width: 1000px;
+  margin: 0 auto; /* center on page */
+      
+}
+
+
+.image img {
+  width: 100%;   /* make image responsive */
+  border-radius: 10px;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* On small screens, stack them */
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+.contact {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  text-align: left;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.contact-form button {
+  background: black;
+  color: gold;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: gold;
+  color: black;
+}
+
+
+.footer {
+  background: black;
+  color: lightgray;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.footer .social {
+  margin-top: 10px;
+}
+
+.footer .social a img {
+  width: 24px;
+  height: 24px;
+  margin: 0 8px;
+  filter: invert(80%); /* make icons light */
+  transition: transform 0.2s;
+}
+
+.footer .social a img:hover {
+  transform: scale(1.2);
+  filter: invert(100%) sepia(100%) saturate(200%) hue-rotate(45deg); /* gold hover */
+}
+
+
